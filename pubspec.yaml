@@ -1,0 +1,39 @@
+name: rzr_erp_weather_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_dotenv: ^5.1.0
+  cupertino_icons: ^1.0.6
+
+  flutter_bloc: ^8.1.1
+  get_it: ^7.2.0
+  go_router: ^5.2.0
+  dartz: ^0.10.1
+  freezed_annotation: ^2.4.1  
+  dio: ^4.0.4
+  json_annotation: ^4.4.0
+  pretty_dio_logger: ^1.1.1
+
+dev_dependencies:
+  flutter_driver:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  freezed: any
+  build_runner: any
+  json_serializable: any
+  flutter_launcher_icons: ^0.13.1
+  mockito: any
+  bloc_test: ^9.1.4
+
+flutter:
+  uses-material-design: true
+
