@@ -3,6 +3,12 @@
 ### How to run
 
 ```
+cd assets
+
+cp .env.example .env
+
+cd ..
+
 flutter pub get
 
 flutter pub run build_runner build
