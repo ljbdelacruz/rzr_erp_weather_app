@@ -16,6 +16,7 @@ class WeatherPage extends StatelessWidget {
     getWeatherPageBloc().add(FetchWeatherEvent());
     return SafeArea(
       child: Scaffold(
+      key: const Key("weather_main_page"),
       body: SingleChildScrollView(child:Column(children:[
         weatherBlocListener(context),
         const Text("Weather data"),

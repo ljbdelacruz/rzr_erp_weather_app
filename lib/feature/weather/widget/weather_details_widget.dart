@@ -2,7 +2,6 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:rzr_erp_weather_app/core/service.di.dart';
@@ -19,7 +18,9 @@ class CurrentWeatherDetailsWidget extends StatelessWidget {
             if(state is ShowWeatherDataState){
               var currentWeatherData = state.dailyWeather.entries.first.value.first;
               var currentTemp = currentWeatherData.main.temp - 273.15;
-              return InkWell(onTap:(){
+              return InkWell(
+                key: const Key("current_weather_details_btn"),
+                onTap:(){
                 getWeatherPageBloc().add(ShowWeatherEvent(currentWeatherData));
                 context.go("/details");
               }, child: Column(
